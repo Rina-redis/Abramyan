@@ -6,7 +6,7 @@ namespace Abramyan
     {
         static void Main(string[] args)
         {
-            Integer29(15,5,2);
+            Integer30(1901);
         }
         public static void Integer7(int x)
         {
@@ -73,6 +73,11 @@ namespace Abramyan
             int numberOfSquaresInRectangle = rectangleArea / squareArea;
             int leftedArea = rectangleArea - (squareArea * numberOfSquaresInRectangle);
             Console.WriteLine(numberOfSquaresInRectangle + " " + leftedArea);
+        }
+        public static void Integer30(int year)
+        {
+            int century = (year-1)/ 100 + 1;            
+            Console.WriteLine(century);
         }
     }
 }
