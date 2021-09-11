@@ -6,7 +6,7 @@ namespace Abramyan
     {
         static void Main(string[] args)
         {
-            Case18(514);
+            For15(3,15);
         }
         #region Integer
         public static void Integer7(int x)
@@ -922,6 +922,80 @@ namespace Abramyan
                         zodiacSign += "Стрелец";
                     break;
             }            
+        }
+        #endregion
+        #region For
+        public static void For8(int a, int b)
+        {
+            int c = 1;
+            for (int i = a; i < b; i++)
+            {
+                 c *= i;
+                Console.WriteLine(c); 
+            }
+        }
+        public static void For9(int a, int b)
+        {
+            double c = 0;
+            for (int i = a; i < b; i++)
+            {
+                c += i*i;
+                Console.WriteLine(c);
+            }
+        }
+        public static void For10(float n)
+        {
+            double sum = 0;
+            for (int i = 1; i < n; i++)
+            {
+                 sum += 1 / (double)i;                
+            }
+            Console.WriteLine(sum);
+        }
+        public static void For11(float n)
+        {
+            double sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                sum += (n + i) * (n + i);
+            }
+            Console.WriteLine(sum);
+        }
+        public static void For12(float n)
+        {
+            double sum = 1;
+            for (int i = 1; i < n; i++)
+            {
+                sum *= 1 + (1 + 0.1 * i);               
+            }
+            Console.WriteLine(sum);
+        }
+        public static void For13(float n)
+        {
+            double sum = 0;
+            for (int i = 1; i < n; i++)
+            {
+                sum += Math.Pow(-1,i+1) * (1 + 0.1 * i);               
+            }
+            Console.WriteLine(sum);
+        }
+        public static void For14(float n)
+        {
+            double squareN = 0;
+            for (int i = 0; i < 2*n-1; i++)
+            {
+                squareN += 1 + (i * 2);                
+            }
+            Console.WriteLine(squareN);
+        }
+        public static void For15(float a, int n)
+        {
+            double aInNDegree = 1;
+            for (int i = 0; i < n ; i++)
+            {
+                aInNDegree *= a;              
+            }
+            Console.WriteLine(aInNDegree);
         }
         #endregion
     }
